@@ -1,0 +1,12 @@
+{
+  "name": "Tuna Browser",
+  "version": "0.10.0",
+  "status": "source prototype, not a native installer",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS",
+    "ChromeOS (Crostini)"
+  ],
+  "launcher": "Remedy Launcher"
+}

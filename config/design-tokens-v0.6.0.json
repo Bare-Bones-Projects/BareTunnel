@@ -1,0 +1,13 @@
+{
+  "project": "Tuna Browser",
+  "version": "0.6.0",
+  "theme": "Minimal Terminal II",
+  "spacing": {"xs":4,"sm":8,"md":12,"lg":16,"xl":24},
+  "radius": {"control":3,"panel":4,"modal":4},
+  "colors": {
+    "bg":"#080b0d","panel":"#0d1114","panelRaised":"#11171a","line":"#263036",
+    "text":"#d7e0e3","muted":"#7f9097","accent":"#00ffa5","danger":"#ff5f68","warning":"#ffc857"
+  },
+  "titlePrefix": "//",
+  "referenceTagPrefix": "BB-"
+}

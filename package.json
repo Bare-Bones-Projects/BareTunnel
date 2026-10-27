@@ -1,0 +1,54 @@
+{
+  "name": "tuna-browser",
+  "version": "0.10.0",
+  "private": true,
+  "description": "Tuna Browser cross-platform Electron prototype with constrained navigation and Remedy Launcher bridge.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "check": "node --check src/main.js && node --check src/preload.js && node --check src/renderer.js && node --check src/vault.js && node --check launcher/bridge.js && node --check src/url-policy.js",
+    "test": "node --test tests/*.test.js",
+    "pack:dir": "electron-builder --dir",
+    "pack:win": "electron-builder --win nsis portable",
+    "pack:linux": "electron-builder --linux AppImage deb",
+    "pack:mac": "electron-builder --mac dmg zip",
+    "pack:chromeos": "electron-builder --linux deb"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "dev.justinbones.tunabrowser",
+    "productName": "Tuna Browser",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "launcher/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Network"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    }
+  }
+}

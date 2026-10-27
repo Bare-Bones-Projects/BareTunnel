@@ -1,0 +1,1 @@
+const {contextBridge,ipcRenderer}=require('electron');contextBridge.exposeInMainWorld('tuna',{version:()=>ipcRenderer.invoke('tuna:version'),openURL:(value)=>ipcRenderer.invoke('tuna:open-url',value)});

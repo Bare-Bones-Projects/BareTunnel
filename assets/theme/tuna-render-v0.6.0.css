@@ -1,0 +1,37 @@
+/*
+// TUNA BROWSER v0.6.0
+// RENDER-DERIVED THEME
+// BB-THEME-01
+*/
+:root {
+  --bb-bg:#080b0d;
+  --bb-surface:#0d1114;
+  --bb-surface-2:#11171a;
+  --bb-border:#263036;
+  --bb-text:#d7e0e3;
+  --bb-muted:#7f9097;
+  --bb-accent:#00ffa5;
+  --bb-cyan:#00d4ff;
+  --bb-danger:#ff5f68;
+  --bb-warning:#ffc857;
+  --bb-radius:4px;
+  --bb-space:8px;
+  --bb-font:"Roboto Mono","Noto Sans Mono",monospace;
+}
+html,body{background:var(--bb-bg);color:var(--bb-text);font-family:var(--bb-font);}
+h1,h2,h3,.bb-title,.panel-title{font-family:var(--bb-font);text-transform:uppercase;letter-spacing:.045em;}
+h1::before,h2::before,h3::before,.bb-title::before,.panel-title::before{content:"// ";color:var(--bb-accent);}
+.bb-panel,.bb-card,.bb-dropdown,.bb-modal,.bb-frame{background:var(--bb-surface);border:1px solid var(--bb-border);border-radius:var(--bb-radius);box-shadow:none;}
+.bb-toolbar{min-height:40px;padding:4px 8px;display:flex;gap:6px;align-items:center;border-bottom:1px solid var(--bb-border);background:#090d0f;}
+.bb-icon-button{width:30px;height:30px;display:inline-grid;place-items:center;padding:0;border:1px solid var(--bb-border);border-radius:3px;background:transparent;color:var(--bb-text);}
+.bb-icon-button:hover,.bb-icon-button:focus-visible{border-color:var(--bb-accent);outline:none;}
+.bb-dropdown{min-width:220px;padding:4px;}
+.bb-dropdown__item,.bb-row{min-height:30px;padding:6px 8px;display:flex;align-items:center;justify-content:space-between;}
+.bb-dropdown__item:hover,.bb-row:hover{background:var(--bb-surface-2);}
+.bb-modal{width:min(480px,calc(100vw - 32px));padding:12px;}
+.bb-modal__footer{display:flex;justify-content:flex-end;gap:8px;padding-top:12px;border-top:1px solid var(--bb-border);}
+.bb-split-handle{width:6px;background:#0a0e10;border-left:1px solid var(--bb-border);border-right:1px solid var(--bb-border);cursor:col-resize;}
+.bb-split-handle:hover{border-color:var(--bb-accent);}
+.bb-ref-tag{color:var(--bb-accent);font-size:11px;letter-spacing:.06em;text-transform:uppercase;}
+.bb-status-ok{color:var(--bb-accent)} .bb-status-warning{color:var(--bb-warning)} .bb-status-danger{color:var(--bb-danger)}
+::selection{background:var(--bb-accent);color:#00150e;}

@@ -1,0 +1,77 @@
+{
+  "project": "Tuna Browser",
+  "version": "0.6.0",
+  "repository": "jus7intuna/TunaBrowser",
+  "assets": [
+    {
+      "path": "assets/tuna-minimal-theme.css",
+      "sha256": "33c9b79ff59457cbc0f0d20399bff163ba3294c9dcf1f33f310f3cce500fe9fc",
+      "bytes": 1533
+    },
+    {
+      "path": "assets/icons/ICON_MAP.md",
+      "sha256": "d20df76aa89f01e399ca5fd01471d23849a308cdd2d009319a20c81e717f8b27",
+      "bytes": 418
+    },
+    {
+      "path": "assets/icons/tuna-browser-128.png",
+      "sha256": "eea0790f318c4be7a6f358b0b7de54d03f38d3be2834a8008d305bef819c667a",
+      "bytes": 33062
+    },
+    {
+      "path": "assets/icons/tuna-browser-16.png",
+      "sha256": "0fc809e384a9018a1185c9fa117251b7a181a7a79da7f8ac700639494d22e590",
+      "bytes": 941
+    },
+    {
+      "path": "assets/icons/tuna-browser-256.png",
+      "sha256": "b608438cdc045469fd81096eedfcd7307fbb45a6a11da5042198129501e2d40c",
+      "bytes": 101446
+    },
+    {
+      "path": "assets/icons/tuna-browser-32.png",
+      "sha256": "25ab1dce3c9d092c7b43368037b9c761b81f724912f4a255e24142f9c9f78196",
+      "bytes": 3116
+    },
+    {
+      "path": "assets/icons/tuna-browser-512.png",
+      "sha256": "831db4ac4b0f5341c7350c416f5b4da6ee04ed3b2356ec8242d4fe0c98d609d6",
+      "bytes": 282229
+    },
+    {
+      "path": "assets/icons/tuna-browser-64.png",
+      "sha256": "bb5623f8576934bb3274f37f3533f0d09b8d79e465a4adbd3c9bbedc43f43d7c",
+      "bytes": 9998
+    },
+    {
+      "path": "assets/icons/tuna-browser-icon-master.png",
+      "sha256": "f45f8d36e210e087a8a3cc4b875fea4ae0cc3361cdfc4839ae1d05e88463f926",
+      "bytes": 55149
+    },
+    {
+      "path": "assets/icons/tuna-browser.ico",
+      "sha256": "cc54ab1b5d440a543a56838214ed8a74f37fb0b505ac12788774404bca3b9124",
+      "bytes": 154659
+    },
+    {
+      "path": "assets/theme/tuna-render-v0.6.0.css",
+      "sha256": "2748bc87d691142506ec7d3314f126aae855856fbaa6afd08ae29d86784e0194",
+      "bytes": 2190
+    },
+    {
+      "path": "docs/screenshots/v0.6.0-admin-documentation-preview.png",
+      "sha256": "651057d3e5c3590d662e57e4d9b04e899a1c9106522982fd6bfd759a8869efd6",
+      "bytes": 1725893
+    },
+    {
+      "path": "docs/screenshots/v0.6.0-design-asset-pack.png",
+      "sha256": "27587e68a88c5813af1a870eb6e2114503dad3a2ef6605cdc3c221730ed72282",
+      "bytes": 2305676
+    },
+    {
+      "path": "docs/screenshots/v0.6.0-home-system-preview.png",
+      "sha256": "9165d44a0b8d168f9feb2d84f5b492963aa2eb5e1eeb5d4c471a6ced8c6e2f0a",
+      "bytes": 1704839
+    }
+  ]
+}

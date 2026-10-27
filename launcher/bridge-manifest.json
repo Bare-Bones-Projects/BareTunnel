@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "product": "Tuna Browser",
+  "launcher": "Remedy Launcher",
+  "protocol": "tunabrowser://",
+  "args": [
+    "--launcher-ping",
+    "--launcher-open <https-url>"
+  ],
+  "permissions": [
+    "launch",
+    "open_http_https"
+  ],
+  "prohibited": [
+    "vault access",
+    "cookie access",
+    "password export",
+    "permission overrides"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "project": "Tuna Browser",
+  "version": "0.6.0",
+  "theme": "Minimal Terminal II",
+  "referenceTags": {
+    "BB-HOME-01": "Home dashboard / landing",
+    "BB-SPLIT-01": "Split browser window",
+    "BB-TABS-01": "Vertical grouped tabs",
+    "BB-TOPBAR-01": "Top bar and dropdown menus",
+    "BB-QUICK-01": "Quick actions popup",
+    "BB-LANES-01": "Search lanes selector",
+    "BB-PERM-01": "Permissions frame",
+    "BB-SAFE-01": "Safe Vault unlock",
+    "BB-DOWNLOADS-01": "Downloads frame",
+    "BB-QUAR-01": "Quarantine ledger",
+    "BB-VEIL-01": "Veil Mode frame",
+    "BB-DEV-01": "Docked DevTools",
+    "BB-POPUP-01": "Shared dialogs/popups",
+    "BB-INFO-01": "About/info frame",
+    "BB-ASSET-01": "Design and icon asset pack"
+  },
+  "renderPreviewPolicy": "Generate updated render previews after every Tuna Browser update request."
+}

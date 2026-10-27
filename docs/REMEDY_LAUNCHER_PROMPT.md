@@ -1,0 +1,2 @@
+# Remedy Launcher integration prompt
+Integrate Tuna Browser using the manifest `launcher/bridge-manifest.json`. Detect installed Tuna Browser via OS application registration; launch only through `--launcher-open` with a validated HTTP/HTTPS URL, or `tunabrowser://open?url=...`. Never read browser cookies, vault data, credentials, history, or private files. Present version compatibility and installation status; do not silently install or bypass user consent.
