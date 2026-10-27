@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1-draft",
+  "applications": [
+    {
+      "id": "tuna-browser",
+      "display_name": "Tuna Browser",
+      "source_repository": "jus7inbones/BonesBrowser",
+      "channel": "unverified",
+      "installer_url": null,
+      "sha256": null,
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "installation_status": "NOT_PACKAGED"
+    }
+  ]
+}
