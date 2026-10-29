@@ -1,14 +1,4 @@
 {
-  "organization": "Bare-Bones-Projects",
-  "browser": {
-    "name": "Tuna Browser",
-    "repository": "https://github.com/Bare-Bones-Projects/Tuna-Browser",
-    "clone": "https://github.com/Bare-Bones-Projects/Tuna-Browser.git"
-  },
-  "launcher": {
-    "name": "Remedy Launcher",
-    "repository": "https://github.com/Bare-Bones-Projects/Remedy-Launcher",
-    "clone": "https://github.com/Bare-Bones-Projects/Remedy-Launcher.git"
-  },
-  "version": "0.10.0"
+  "browser": "https://github.com/Bare-Bones-Projects/Tuna-Browser",
+  "launcher": "https://github.com/Bare-Bones-Projects/Remedy-Launcher"
 }
