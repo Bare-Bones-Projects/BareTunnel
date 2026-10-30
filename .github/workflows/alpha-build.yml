@@ -1,18 +1,56 @@
-name: Alpha build
+name: Tuna Browser alpha builds
 on:
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - 'src/**'
+      - 'launcher/**'
+      - 'assets/**'
+      - 'package*.json'
+      - '.github/workflows/alpha-build.yml'
 permissions:
   contents: read
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            target: win
+            label: windows-x64
+          - os: ubuntu-latest
+            target: linux
+            label: linux-x64
+          - os: macos-15
+            target: mac
+            label: macos-arm64
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm install
-      - run: npm run check
-      - run: npm test
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Validate JavaScript
+        run: npm run check
+      - name: Run tests
+        run: npm test
+      - name: Build unsigned alpha packages
+        run: npm run pack:${{ matrix.target }} -- --publish never
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Upload installers for manual testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: tuna-browser-0.10.0-alpha-${{ matrix.label }}
+          path: |
+            dist/*.exe
+            dist/*.AppImage
+            dist/*.deb
+            dist/*.dmg
+            dist/*.zip
+          if-no-files-found: error
+          retention-days: 14
