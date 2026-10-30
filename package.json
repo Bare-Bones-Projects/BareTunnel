@@ -13,7 +13,8 @@
     "pack:win": "electron-builder --win nsis portable",
     "pack:linux": "electron-builder --linux AppImage deb",
     "pack:mac": "electron-builder --mac dmg zip",
-    "pack:chromeos": "electron-builder --linux deb"
+    "pack:chromeos": "electron-builder --linux deb",
+    "alpha:verify": "npm run check && npm test"
   },
   "devDependencies": {
     "electron": "^37.2.0",
