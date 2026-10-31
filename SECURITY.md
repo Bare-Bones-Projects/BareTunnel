@@ -1,3 +1,5 @@
-# // SECURITY
+# Security Policy
 
-Tuna Browser does not claim anonymity, IP masking, or Tor equivalence. Onion destinations use a Tor Browser handoff. Theme files never contain vault, permission, or download security decisions.
+Tuna Browser is designed as a lightweight, efficient browsing utility and does not offer any formal guarantees, warranties, or assurances regarding user anonymity, IP masking, or functional parity with the Tor Browser. While the browser provides built-in connectivity to onion services by facilitating a seamless handoff to the Tor Browser, it is imperative that users exercise independent caution and maintain an awareness that this implementation does not constitute a comprehensive privacy suite or a hardened security solution.
+
+Furthermore, to maintain the absolute integrity and operational security of the browser's core architecture, theme files are strictly prohibited from embedding any logic, malicious scripts, or unauthorized configurations related to sensitive functions such as password vaults, system-level permissions, or security enforcement decisions concerning file downloads. Any attempt to introduce such logic within theme files is explicitly unsupported, constitutes a violation of our security model, and poses a significant, unacceptable risk to the stability and overall security of the Tuna Browser environment. All contributors, developers, and users are expected to strictly adhere to these architectural constraints to ensure a consistent, predictable, and secure browsing experience for the entire community.
