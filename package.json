@@ -17,7 +17,7 @@
     "alpha:verify": "npm run check && npm test"
   },
   "devDependencies": {
-    "electron": "^37.2.0",
+    "electron": "^42.11.16",
     "electron-builder": "^26.0.12"
   },
   "build": {
