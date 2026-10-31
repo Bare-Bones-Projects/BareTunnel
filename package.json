@@ -14,7 +14,10 @@
     "pack:linux": "electron-builder --linux AppImage deb",
     "pack:mac": "electron-builder --mac dmg zip",
     "pack:chromeos": "electron-builder --linux deb",
-    "alpha:verify": "npm run check && npm test"
+    "alpha:verify": "npm run check && npm test",
+    "verify:win": "node scripts/verify-dist.js win",
+    "verify:linux": "node scripts/verify-dist.js linux",
+    "verify:mac": "node scripts/verify-dist.js mac"
   },
   "devDependencies": {
     "electron": "^42.11.16",
@@ -49,7 +52,10 @@
       "target": [
         "dmg",
         "zip"
-      ]
-    }
+      ],
+      "identity": null
+    },
+    "asar": true,
+    "npmRebuild": false
   }
 }
