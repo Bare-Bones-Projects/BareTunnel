@@ -1,6 +1,6 @@
 # Tuna Browser v0.10.0 alpha testing
-Official source: https://github.com/Bare-Bones-Projects/Tuna-Browser
-Companion: https://github.com/Bare-Bones-Projects/Remedy-Launcher
+Official source: https://github.com/BareBones-Projects/Tuna-Browser
+Companion: https://github.com/BareBones-Projects/Remedy-Launcher
 
 ## Run the builds
 Actions > Tuna Browser alpha builds > Run workflow.
